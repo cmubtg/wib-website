@@ -9,7 +9,7 @@ import {
   FaInstagram,
   FaLinkedinIn
 } from "react-icons/fa";
-import LogoGray from "../images/btg-logo-gray.svg";
+import LogoGray from "../images/wib-logo-gold.svg";
 import MailchimpForm from "../components/MailchimpForm";
 
 
@@ -19,7 +19,7 @@ const SocialMedia = () => {
     <Col>
       <Button
         variant="light"
-        href="https://facebook.com/cmubtg"
+        href="https://facebook.com/wibcmu"
         target="_blank"
         className="mr-1"
       >
@@ -27,7 +27,7 @@ const SocialMedia = () => {
       </Button>
       <Button
         variant="light"
-        href="https://instagram.com/cmubtg"
+        href="https://instagram.com/wibcmu/"
         target="_blank"
         className="mr-1"
       >
@@ -35,15 +35,7 @@ const SocialMedia = () => {
       </Button>
       <Button
         variant="light"
-        href="https://github.com/cmubtg"
-        target="_blank"
-        className="mr-1"
-      >
-        <FaGithub />
-      </Button>
-      <Button
-        variant="light"
-        href="https://linkedin.com/company/cmubtg"
+        href="https://linkedin.com/company/womeninbusiness-carnegie-mellon"
         target="_blank"
         className="mr-1"
       >
@@ -59,7 +51,7 @@ const LeftFooter = () => {
       <Row className="text-secondary mt-2">
         <small>
           Want to reach out? Send us a line at{" "}
-          <a href="mailto:info@cmubtg.com" target="_blank" rel="noopener noreferrer">info@cmubtg.com</a>
+          <a href="mailto:wibcmu@gmail.com" target="_blank" rel="noopener noreferrer">wibcmu@gmail.com</a>
         </small>        
       </Row>   
       <Row className="mt-2">
@@ -95,7 +87,7 @@ const Logo = () => {
   return (
     <Row className="mt-4">
       <Col className="text-center">
-        <img src={LogoGray} alt="" width="50" height="50" />
+        <img src={LogoGray} alt="" width="125" height="125" />
       </Col>
   </Row>   
   )
