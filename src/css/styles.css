@@ -110,13 +110,10 @@ html {
   }
 
   .navbar-light .navbar-nav .nav-link {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .navbar-light .navbar-nav .nav-link:hover {
-    border-top: 1px solid black;
-  }
 }
 
 .profile-img-fluid {
@@ -125,9 +122,9 @@ html {
   object-fit: contain;
 }
 
-.container {
+/* .container {
   max-width: 960px;
-}
+} */
 
 .team-photo-wrapper {
   display: grid;
