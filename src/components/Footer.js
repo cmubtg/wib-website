@@ -16,7 +16,7 @@ import MailchimpForm from "../components/MailchimpForm";
 
 const SocialMedia = () => {
   return (
-    <Col>
+    <Row>
       <Button
         variant="light"
         href="https://facebook.com/wibcmu"
@@ -41,70 +41,112 @@ const SocialMedia = () => {
       >
         <FaLinkedinIn />
       </Button>
-    </Col>
+    </Row>
   )
 }
 
-const LeftFooter = () => {
-  return (
-    <Container>
-      <Row className="text-secondary mt-2">
-        <small>
-          Want to reach out? Send us a line at{" "}
-          <a href="mailto:wibcmu@gmail.com" target="_blank" rel="noopener noreferrer">wibcmu@gmail.com</a>
-        </small>        
-      </Row>   
-      <Row className="mt-2">
-        <a href="https://github.com/cmubtg/btg-website/blob/master/CODE_OF_CONDUCT.md"
-          target="_blank" 
-          rel="noreferrer"
-          class="link-secondary"
-        >
-          <small>Code of Conduct</small>          
-        </a>
-      </Row>
-      <Row className="text-secondary mt-2">
-        <small>Deployed on {" "}
-          <a href="https://www.netlify.com/"
-            target="_blank" 
-            rel="noreferrer"
-            class="link-secondary"
-          >
-            <b>Netlify</b>
-          </a>
-          
-          </small>          
-        
-      </Row>      
-      <Row className="mt-3">
-        <SocialMedia />
-      </Row>   
-    </Container>
-  )
-}
-
-const Logo = () => {
+const Footer1 = () => {
   return (
     <Row className="mt-4">
-      <Col className="text-center">
-        <img src={LogoGray} alt="" width="125" height="125" />
+      <Col>
+        <img src={LogoGray} alt="" width="150" height="150" />
       </Col>
   </Row>   
   )
 }
+const Footer2 = () => {
+  return (
+    <Container>
+      <Row>
+              <br></br>
+              <br></br>
+      </Row>
+      <Row className="mt-2">
+        4765 Forbes Ave        
+      </Row>   
+      <Row className="mt-2">
+      Pittsburgh, PA 15213
+      </Row>
+      <Row className="mt-2">  
+      wibcmu@gmail.com            
+      </Row>       
+    </Container>
+  )
+}
+const Footer3 = () => {
+  return (
+    <Container>
+      <Row>
+              <br></br>
+              <br></br>
+      </Row>
+      <Row className="mt-2">
+        <a href="https://wibcmu.com/about/"
+          rel="noreferrer"
+          class="link-secondary"
+        >
+        About    
+        </a>
+      </Row>  
+      <Row className="mt-2">
+        <a href="https://wibcmu.com/events/"
+          rel="noreferrer"
+          class="link-secondary"
+        >
+        Events
+        </a>
+      </Row>  
+      <Row className="mt-2">
+        <a href="https://wibcmu.com/contact/"
+          rel="noreferrer"
+          class="link-secondary"
+        >
+        Contact us   
+        </a>
+      </Row>      
+    </Container>
+  )
+}
+const Footer4 = () => {
+  return (
+    <Container>
+      <Row>
+              <br></br>
+              <br></br>
+      </Row>
+      <Row>
+      <SocialMedia/>            
+      </Row>       
+    </Container>
+  )
+}
+
 const Footer = () => {
   return (
-    <div className="mt-5 border-top bg-white">
+    <div className="mt-5 bg-white">
       <Container className="py-3 mt-3" id="contact">
+        
         <Row>
           <Col>
-            <LeftFooter />
+            <Footer1 />
           </Col>
           <Col>
-            <MailchimpForm />         
+          <Footer2 />
+          </Col>
+          <Col>
+          <Footer3 />
+          </Col>
+          <Col>
+            <Footer4 />         
           </Col>
         </Row>
-        <Logo />
+        <Row>
+          <br></br>
+          <br></br>
+        </Row>
+        <Row>
+        <MailchimpForm />
+        </Row>
       </Container>
     </div>
 
