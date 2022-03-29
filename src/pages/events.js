@@ -17,19 +17,21 @@ function Events(){
           <meta name="twitter:image" content={BTGCover}></meta>
         </Helmet>            
           <Container className="mt-md-1 pt-md-4">
-            <Row className="pt-1 mt-5">
+            <Row className="mt-1">
               <Col>
                 <h1 className="display-3 text-black font-weight-boldest" style = {{marginBottom: 20}}>Events</h1>
               </Col>
             </Row>
-            <iframe src={calendar} 
-              style={{border:"solid 1px #777", marginTop:"20px"}} 
-              width="900" 
-              height="700" 
-              frameborder="0" 
-              scrolling="no" 
-              title="BTG Calendar"
-            />
+            <Row>
+              <iframe src={calendar} 
+                style={{border:"solid 1px #777", marginTop:"20px"}} 
+                height="800" 
+                frameborder="0" 
+                scrolling="no" 
+                title="WIB Calendar"
+              />
+            </Row>
+
             </Container>
         </Layout>
       </div>
