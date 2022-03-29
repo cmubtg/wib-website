@@ -2,19 +2,19 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import LogoColor from "../images/wib-logo-gold.svg";
+import LogoColor from "../images/wib-logo-horizontal-2.png";
 import { Link } from "gatsby";
 import Button from 'react-bootstrap/Button'
 
 function Navigation2(){
   return (
     <Container>
-    <Navbar bg="white" expand="lg">
+    <Navbar expand="lg">
       <Navbar.Brand>
         <img
           src={LogoColor}
-          width="150"
-          height="150"
+          width="235"
+          height="55"
           alt="WIB Logo"
         />
       </Navbar.Brand>

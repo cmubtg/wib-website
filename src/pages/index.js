@@ -7,121 +7,107 @@ import Companies from "../components/Companies";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
+import Jumbotron from "../components/Jumbotron";
+import Navigation2 from "../components/Navigation2"
+import { Card } from "react-bootstrap";
+import { Button } from "react-bootstrap"
 
 function Home() {
   return (
-    <Layout>
+    <div>
       <Helmet>
         <title>Home | CMUBTG</title>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
-      <Container className="mt-md-1 pt-md-4">
-        <Row className="pt-1 mt-5">
-          <Col>
-            <h1 class="display-3 text-black font-weight-boldest">
-              We build the cutting edge
-            </h1>
-
-            <h2 class="text-muted font-weight-bold">
-              We are the CMU Business Technology Group
-            </h2>
-          </Col>
-        </Row>
-      </Container>
+      <Jumbotron>
+        <Navigation2/>
+        <div class="overlay">
+          <h1 class="display-3 text-white font-weight-boldest">Carnegie Mellon University</h1>
+          <h1 class="display-3 text-white  font-weight-boldest">Women in Business</h1>
+        </div>
+      </Jumbotron>
 
       <Container>
-        <Row className="mt-5">
-          <Col md={3}>
-            <p>
-              We specialize in applied technology that improves work, play, and
-              education.
-            </p>
-          </Col>
-
-          <Col md={9}>
-            <p>
-              Our mission is to provide undergraduates interested in business and
-              technology with real-world projects, a strong understanding of potential
-              career paths, and offer them opportunities to gain hands-on experience
-              in their areas of interest.
-            </p>
-
-            <Row className="mt-5 py-3">
-              <Col xs={12} md={4}>
-                <h4 className="font-weight-bold">
-                  <Badge bg="danger" className="align-bottom">
-                    2
-                  </Badge>{" "}
-                  Divisions
-                </h4>
-              </Col>
-              <Col xs={12} md={4}>
-                <h4 className="font-weight-bold">
-                  <Badge bg="success" className="align-bottom">
-                    10
-                  </Badge>{" "}
-                  Workshops
-                </h4>
-              </Col>
-              <Col xs={12} md={4}>
-                <h4 className="font-weight-bold">
-                  <Badge bg="primary" className="align-bottom">
-                    2
-                  </Badge>{" "}
-                  Career Events
-                </h4>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-
-        <Row className="mt-5">
-          <Col md={3}>
-            <span className="font-weight-bold"><b>Product Studio</b></span>
-          </Col>
-          <Col md={9}>
-            <p>
-              Product Studio is a structured program consisting of teams of 
-              product managers, software engineers, data scientists, UI/UX designers, 
-              and business analysts. Every team in Product Studio will build a tech product 
-              that you will deliver at the end of the 10-week program.
-            </p>
-          </Col>
-        </Row>
-
-        <Row className="mt-5">
-          <Col md={3}>
-            <span className="font-weight-bold"><b>Product Explore</b></span>
-          </Col>
-          <Col md={9}>
-            <p>
-              Product Explore is a flexible program. Members are free to organize 
-              their own teams and work on any problem they want. This is a great 
-              entryway for students interested in projects who are unsure about 
-              their level of commitment.
-            </p>
-          </Col>
+        <Row className="pt-1 mt-5">
+          <h1 class="text-center display-4">OUR MISSION</h1>
         </Row>
       </Container>
-
-      <Container className="pt-3 mt-5">
+      <Container>
         <Row>
-          <Col>
-            <h4 className="font-weight-bold">Historical achievement</h4>
-
-            <p className="py-4">
-              You’re in good company. CMUBTG members and alumni lead, deploy, 
-              engineer, and design exciting projects across the industry. 
-              Here's where some currently work and have worked.
-            </p>
+          <Col className="md-4" style={{ backgroundColor:'#0A547'}}>
+          <Card className="blue-card">
+            <Card.Body>
+              <Card.Title>
+                <h3 class="text-center display-6 nav-link-gold" >Education</h3>
+              </Card.Title>
+              <Card.Text className="nav-link-gold">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+              Aenean commodo ligula eget dolor. Aenean massa. 
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col className="md-4">
+          <Card className="blue-card">
+            <Card.Body>
+              <Card.Title>
+                <h3 class="text-center display-6 nav-link-gold">Networking</h3>
+              </Card.Title>
+              <Card.Text className="nav-link-gold">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+              Aenean commodo ligula eget dolor. Aenean massa. 
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col className="md-4">
+          <Card className="blue-card">
+            <Card.Body>
+              <Card.Title>
+                <h3 class="text-center display-6 nav-link-gold">Family</h3>
+              </Card.Title>
+              <Card.Text className="nav-link-gold">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+              Aenean commodo ligula eget dolor. Aenean massa. 
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+              </Card.Text>
+            </Card.Body>
+          </Card>
           </Col>
         </Row>
-
-        <Companies />
+      </Container>
+      <Container>
+        <Row className="pt-1 mt-5">
+          <h3 className="text-center">Become a Member!</h3>
+        </Row>
+        <Row>
+          <Col md={4}>
+          </Col>
+          <Col md={4}>
+          <Button variant="outline-warning">Become a Member</Button>
+          </Col>
+          <Col md={4}>
+          </Col>
+        </Row>
       </Container>
 
-      </Layout>
+      <Container className="blue-card">
+      <Row className="pt-1 mt-5">
+          <h1 class="text-center display-4 nav-link-gold">EVENT HIGHLIGHTS</h1>
+      </Row>
+      <p class="nav-link-gold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      </p>
+      </Container>
+    </div>
   );
 }
 
