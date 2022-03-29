@@ -1,3 +1,32 @@
 .nav-link-gold {
   color: rgba(227, 188, 89, 1)
 }
+
+.background-blue {
+  color: rgba(10, 84, 113,1)
+}
+
+.blue-card {
+  background-color: rgba(10, 84, 113,1);
+}
+
+.jumbotron {
+  color: white;
+  /* background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/homepagebackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 7vh;
+  left: 7vw;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
