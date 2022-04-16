@@ -11,6 +11,7 @@ import Jumbotron from "../components/Jumbotron";
 import Navigation2 from "../components/Navigation2"
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap"
+import { navigate } from "gatsby"
 
 function Home() {
   return (
@@ -90,12 +91,15 @@ function Home() {
           <h3 className="text-center">Become a Member!</h3>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col>
           </Col>
-          <Col md={4}>
-          <Button variant="outline-warning">Become a Member</Button>
+          <Col onClick={()=>navigate("members/")}>
+            <div className="yellow-col text-center p-3">
+              <p className="background-blue">Visit our membership page</p>
+            </div>
+          {/* <Button variant="outline-warning" className="d-flex">Become a Member</Button> */}
           </Col>
-          <Col md={4}>
+          <Col>
           </Col>
         </Row>
       </Container>
