@@ -126,24 +126,24 @@ const Footer4 = () => {
 const Footer = () => {
   return (
     <div className="mt-5 bg-white">
-      <Container className="py-3 mt-3" id="contact">
-        <div class="bg-light text-dark">
-          <Row>
-            <Col>
-              <Footer1 />
-            </Col>
-            <Col>
-            <Footer2 />
-            </Col>
-            <Col>
-            <Footer3 />
-            </Col>
-            <Col>
-              <Footer4 />         
-            </Col>
-          </Row>
-        </div> 
-      </Container>
+      <div class="bg-light text-dark">
+        <Container className="py-3 mt-3" id="contact">
+            <Row>
+              <Col>
+                <Footer1 />
+              </Col>
+              <Col>
+             <Footer2 />
+              </Col>
+              <Col>
+              <Footer3 />
+              </Col>
+              <Col>
+                <Footer4 />         
+              </Col>
+            </Row>
+        </Container>
+      </div>
     </div>
 
   );
