@@ -35,3 +35,31 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.tall-underline {
+  padding:0em;
+  box-shadow:inset 0-.4em #FFC045;
+  width:fit-content;
+  display:block;
+  margin:auto;
+  color:#0A5471;
+  font-weight:bold;
+  font-size:3.5em;
+}
+
+.coffee-chats {
+  background-color:#0A5471;
+  color:white;
+  border:0px;
+  display:block;
+  margin:auto;
+  margin-top:4em;
+  margin-bottom:8em;
+  padding:1em;
+}
+
+.board-popover-head {
+  background-color:#0A5471;
+  color:white;
+}
+
