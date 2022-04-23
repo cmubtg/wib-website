@@ -49,7 +49,7 @@ const Footer1 = () => {
   return (
     <Row className="mt-4">
       <Col>
-        <img src={LogoGray} alt="" width="150" height="150" />
+        <img src={LogoGray} alt=""width="150" height="150" />
       </Col>
   </Row>   
   )
@@ -121,33 +121,29 @@ const Footer4 = () => {
   )
 }
 
+
+
 const Footer = () => {
   return (
     <div className="mt-5 bg-white">
-      <Container className="py-3 mt-3" id="contact">
-        
-        <Row>
-          <Col>
-            <Footer1 />
-          </Col>
-          <Col>
-          <Footer2 />
-          </Col>
-          <Col>
-          <Footer3 />
-          </Col>
-          <Col>
-            <Footer4 />         
-          </Col>
-        </Row>
-        <Row>
-          <br></br>
-          <br></br>
-        </Row>
-        <Row>
-        <MailchimpForm />
-        </Row>
-      </Container>
+      <div class="bg-light text-dark">
+        <Container className="py-3 mt-3" id="contact">
+            <Row>
+              <Col>
+                <Footer1 />
+              </Col>
+              <Col>
+             <Footer2 />
+              </Col>
+              <Col>
+              <Footer3 />
+              </Col>
+              <Col>
+                <Footer4 />         
+              </Col>
+            </Row>
+        </Container>
+      </div>
     </div>
 
   );
