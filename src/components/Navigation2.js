@@ -32,7 +32,7 @@ function Navigation2(){
             </Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Link to="/projects" className="nav-link" activeClassName="active">
+            <Link to="/executive-board" className="nav-link" activeClassName="active">
               <p className="nav-link-gold">Executive Board</p>
             </Link>
           </Nav.Item>

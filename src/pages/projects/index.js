@@ -84,14 +84,14 @@ class ProjectListTemplate extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>Projects | CMUBTG</title>
+          <title>Executive Board | CMUBTG</title>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
         </Helmet>
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
-              <h1 className="display-3 text-black font-weight-boldest">Projects</h1>
+              <h1 className="display-3 text-black font-weight-boldest">Executive Board</h1>
             </Col>
           </Row>
         

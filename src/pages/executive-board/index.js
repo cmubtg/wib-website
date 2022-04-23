@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 
@@ -11,59 +11,35 @@ import Helmet from "react-helmet"
 import BTGCover from "../../images/btg-cover.png";
 import MemberDisplay from "../../components/MemberDisplay"
 import { getImage } from 'gatsby-plugin-image';
-import MySelect from "../../components/MySelect"
+import "../../css/styles2.css";
 
 function RoleContainer(props) {
   return (
     <Row className="pt-1 mt-5">
-      <h3>{props.role}s</h3>
-    {Array.from(props.members).map(({ node:member }) => (
-      <MemberDisplay
-        title = {member.frontmatter.title}
-        role = {member.frontmatter.role}
-        degree = {member.frontmatter.degree}
-        major = {member.frontmatter.major}
-        year = {member.frontmatter.year}
-        photo = {getImage(member.frontmatter.photo)}
-        slug = {member.fields.slug}
-        linkedIn = {member.frontmatter.linkedIn}
-      ></MemberDisplay>
-    ))}
+      {Array.from(props.members).map(({ node:member }) => (
+        <MemberDisplay
+          title = {member.frontmatter.title}
+          role = {member.frontmatter.role}
+          degree = {member.frontmatter.degree}
+          major = {member.frontmatter.major}
+          year = {member.frontmatter.year}
+          photo = {getImage(member.frontmatter.photo)}
+          slug = {member.fields.slug}
+          linkedIn = {member.frontmatter.linkedIn}
+        ></MemberDisplay>
+      ))}
     </Row>
   )
 }
 
-function check_keys(str,dict) {
-  for(let s in dict){
-    if(str.includes(s)){
-      return s
-    }
-  }
-  return ""
-}
 
 function get_roles(members) {
-  var roles = {"Executive":[],
-              "Software Developer":[],
-              "UI/UX Designer":[],
-              "Product Manager":[],
-              "Data Scientist":[],
-              "Business Analyst":[]
+  var roles = {
+              "Board Member":[]
             }
   members.forEach(
     function(member,index) {
-      var r = member.node.frontmatter.role
-      if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
-        roles["Executive"].push(member)
-      }
-      var k = check_keys(r,roles)
-      if(k!=="") {
-        if(r.includes("Lead")){
-          roles[k].unshift(member)
-        } else{
-          roles[k].push(member)
-        }
-      }
+      roles["Board Member"].push(member);
     }
   )
   return Object.entries(roles)
@@ -89,7 +65,6 @@ class MemberListTemplate extends React.Component {
       roles:[ops[0]],
       options:ops
     }
-    this.setRoles = this.setRoles.bind(this)
   }
 
   setRoles(input) {
@@ -100,42 +75,22 @@ class MemberListTemplate extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>Members | CMUBTG</title>
+          <title>Executive Board | CMUBTG</title>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
         </Helmet>
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
-              <h1 className="display-3 text-black font-weight-boldest">Members</h1>
+              <h1 className="tall-underline">MEET THE BOARD</h1>
             </Col>
           </Row>
 
-          <div>
-            <Container className="py-3 mt-2">
-              <Row>
-                <Col>
-                  <p>
-                    The CMUBTG combines hands-on technical training and holistic
-                    engagement with the technology industry. Our strong community
-                    can be found around campus and reinforces our dedicated yet fun
-                    culture.
-                  </p>
-                </Col>
-              </Row>
-              {/* <TeamSummary /> *//*}
-            </Container>
-        </div>        
+          {/* <button className="coffee-chats">SIGN UP FOR COFFEE CHATS</button> */}
+
+                
 
         <Container className="mt-2">
-          <MySelect
-            options={this.state.options}
-            isMulti
-            onChange={this.setRoles}
-            allowSelectAll = {true}
-            value={this.state.roles}
-            placeholder="See all our groups"
-          />
             {this.state.roles.map((r) => (
               <RoleContainer
                 role = {r["value"][0]}
@@ -145,12 +100,8 @@ class MemberListTemplate extends React.Component {
         </Container>
       </Container>
 
-      <Container>
-
-      </Container>
 
       </Layout>       
-      
     );
   }
 }
@@ -202,4 +153,4 @@ export default function MemberList() {
       render={(data, count) => <MemberListTemplate data={data} count={count} />}
     />
   )
-}*/
+}
