@@ -10,7 +10,10 @@ export default function Layout({ children }) {
   return (
     <div>
       <FadeIn>
-        <Navigation2/>
+        <Navigation2
+          text="background-blue"
+          button="become-a-member-b"
+        />
         <div>
           {children}
         </div>

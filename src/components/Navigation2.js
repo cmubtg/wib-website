@@ -5,8 +5,9 @@ import Container from "react-bootstrap/Container";
 import LogoColor from "../images/wib-logo-horizontal-2.png";
 import { Link } from "gatsby";
 import Button from 'react-bootstrap/Button'
+import NavDropdown from "react-bootstrap/NavDropdown"
 
-function Navigation2(){
+function Navigation2(props){
   return (
     <Container>
     <Navbar expand="lg">
@@ -23,31 +24,30 @@ function Navigation2(){
         <Nav as="ul" className="ms-auto">
           <Nav.Item as="li">
             <Link to="/" className="nav-link" activeClassName="active">
-              <p className="nav-link-gold">Home</p>
-            </Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Link to="/members" className="nav-link" activeClassName="active">
-              <p className="nav-link-gold">About</p>
+              <p className={props.text}>Home</p>
             </Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Link to="/executive-board" className="nav-link" activeClassName="active">
-              <p className="nav-link-gold">Executive Board</p>
+              <p className={props.text}>Executive Board</p>
             </Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Link to="/events" className="nav-link" activeClassName="active">
-              <p className="nav-link-gold">Events</p>
+              <p className={props.text}>Events</p>
             </Link>
           </Nav.Item>
+          <NavDropdown title="Events" id="nav-dropdown">
+            <NavDropdown.Item>Action</NavDropdown.Item>
+            <NavDropdown.Item>Another action</NavDropdown.Item>
+          </NavDropdown>
           <Nav.Item as="li">
             <Link to="/contact" className="nav-link" activeClassName="active">
-              <p className="nav-link-gold">Contact</p>
+              <p className={props.text}>Contact</p>
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Button variant="outline-warning">Become a Member</Button>
+            <Button className={props.button}>Become a Member</Button>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
