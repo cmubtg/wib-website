@@ -8,7 +8,7 @@ import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
 import Jumbotron from "../components/Jumbotron";
-import Navigation2 from "../components/Navigation2"
+import Navigation from "../components/Navigation"
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap"
 import { navigate } from "gatsby"
@@ -22,7 +22,7 @@ function Home() {
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
       <Jumbotron>
-        <Navigation2/>
+        <Navigation/>
         <div class="overlay">
           <h1 class="display-3 text-white font-weight-boldest">Carnegie Mellon University</h1>
           <h1 class="display-3 text-white  font-weight-boldest">Women in Business</h1>

@@ -19,7 +19,7 @@ const MailchimpForm = () => {
           target="_blank"
         >
           <div className="form-row">
-            <div className="col-md-15">
+            <div className="col-md-5">
               <div className="mc-field-group form-group">
                 {/* <label for="mce-EMAIL"></label> */}
                 <input
@@ -48,7 +48,7 @@ const MailchimpForm = () => {
                 value="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                className="btn btn-danger shadow-custom-danger w-100"
+                className="btn btn-primary shadow-custom-danger w-100"
               ></input>
             </div>
           </div>
