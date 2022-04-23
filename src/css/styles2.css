@@ -58,6 +58,23 @@
   padding:1em;
 }
 
+.become-a-member-b {
+  background-color:#0A5471;
+  color:white;
+  border:0px;
+  display:block;
+  margin:auto;
+}
+
+.become-a-member-y {
+  background-color:rgba(227, 188, 89, 1);
+  color:black;
+  border:0px;
+  display:block;
+  margin:auto;
+}
+
+
 .board-popover-head {
   background-color:#0A5471;
   color:white;

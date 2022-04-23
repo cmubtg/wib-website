@@ -22,7 +22,10 @@ function Home() {
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
       <Jumbotron>
-        <Navigation2/>
+        <Navigation2
+          text="nav-link-gold"
+          button="become-a-member-y"
+        />
         <div class="overlay">
           <h1 class="display-3 text-white font-weight-boldest">Carnegie Mellon University</h1>
           <h1 class="display-3 text-white  font-weight-boldest">Women in Business</h1>

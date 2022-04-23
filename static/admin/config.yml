@@ -38,10 +38,10 @@ collections:
       - { label: "Major", name: "major", widget: "string" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
 
-  - name: "projects"
-    label: "Projects"
-    folder: "src/pages/projects"
-    description: "These are the current projects for CMUBTG."
+  - name: "events"
+    label: "Events"
+    folder: "src/pages/events"
+    description: "These are the current events for CMU WIB."
     slug: "{{title}}"
     create: true
     fields:
@@ -49,39 +49,6 @@ collections:
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "project",
+          default: "event",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text"}
-      - { label: "Photo", name: "photo", widget: image }
-      - { label: "DescriptionPhoto", name: "descriptionPhoto", widget: image }
-      - { 
-          label: "Members", 
-          name: "members", 
-          widget: "relation",
-          collection: "members",
-          value_field: "({{fields.title}}, {{fields.andrewID}}, {{fields.photo}}, {{fields.role}})",
-          search_fields: ["title", "andrewID"],
-          display_fields: ["title","role"],
-          multiple: true
-        }
-                     
-  - name: "alumni"
-    label: "Alumni"
-    folder: "src/pages/alumni"
-    description: "There are the CMUBTG alumni."
-    create: true
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "alumni",
-        }
-      - { label: "Title", name: "title", widget: "string"}
-      - { label: "LinkedIn", name: "linkedIn", widget: "string" }
-      - { label: "Year", name: "year", widget: "number", value_type: "int" }
-      - { label: "Degree", name: "degree", widget: "select", options: ["BS", "MS"] }
-      - { label: "Major", name: "major", widget: "string" }
-      - { label: "Role", name: "role", widget: "string"}
       - { label: "Photo", name: "photo", widget: image }
