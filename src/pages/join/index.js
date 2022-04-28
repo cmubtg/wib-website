@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-import { graphql, StaticQuery } from 'gatsby'
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -21,7 +19,7 @@ function join(){
     return (
         <Layout>
             <Helmet>
-                <title>Become A Member | WIB</title>
+                <title>Become A Member | CMUBTG</title>
                 <meta name="twitter:card" content="summary_large_image"></meta>
                 <meta name="twitter:image" content={BTGCover}></meta>
             </Helmet>
