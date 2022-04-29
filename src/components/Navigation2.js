@@ -37,10 +37,27 @@ function Navigation2(props){
               <p className={props.text}>Events</p>
             </Link>
           </Nav.Item>
-          <NavDropdown title="Events" id="nav-dropdown">
-            <NavDropdown.Item>Action</NavDropdown.Item>
-            <NavDropdown.Item>Another action</NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Item as="li">
+            <Link to="/past-events" className="nav-link" activeClassName="active">
+              <p className={props.text}>Past Events</p>
+            </Link>
+          </Nav.Item>
+          {/* <NavDropdown id="nav-dropdown"
+            title={
+              <span className={props.text}>Events</span>
+            }
+          >
+            <NavDropdown.Item>
+            <Link as="span" to="/contact" className="nav-link" activeClassName="active">
+                <span className={props.text}>Contact</span>
+              </Link>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <Link as="span" to="/contact" className="nav-link" activeClassName="active">
+                <span className={props.text}>Contact</span>
+              </Link>
+            </NavDropdown.Item> 
+          </NavDropdown> */}
           <Nav.Item as="li">
             <Link to="/contact" className="nav-link" activeClassName="active">
               <p className={props.text}>Contact</p>
