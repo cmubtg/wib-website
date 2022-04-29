@@ -28,7 +28,7 @@ function Navigation2(props){
             </Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Link to="/executive-board" className="nav-link" activeClassName="active">
+            <Link to="/members" className="nav-link" activeClassName="active">
               <p className={props.text}>Executive Board</p>
             </Link>
           </Nav.Item>
@@ -64,7 +64,9 @@ function Navigation2(props){
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Button className={props.button}>Become a Member</Button>
+            <Button className={props.button}>
+              <Link to="/join">Become a Member</Link>
+            </Button>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

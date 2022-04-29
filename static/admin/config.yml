@@ -16,7 +16,7 @@ collections:
   - name: "members"
     label: "Members"
     folder: "src/pages/members"
-    description: "These are the members currently in CMUBTG."
+    description: "These are the members currently in WIB."
     slug: "{{andrewID}}"
     create: true
     fields:
