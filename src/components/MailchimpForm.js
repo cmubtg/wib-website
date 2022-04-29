@@ -1,10 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import "../css/styles2.css"
 
 const MailchimpForm = () => {
   const mailchimp = {
     position: "absolute",
-    left: "-5000px"
+    left: "500px"
   };
 
   return (
@@ -18,7 +19,7 @@ const MailchimpForm = () => {
           className="validate"
           target="_blank"
         >
-          <div className="form-row">
+          <div className="form-row mailing-form">
             <div className="col-md-15">
               <div className="mc-field-group form-group">
                 {/* <label for="mce-EMAIL"></label> */}
@@ -41,14 +42,14 @@ const MailchimpForm = () => {
                 name="b_c043d73acfb9d61f492748d7b_5ce2d05829"
               ></input>
             </div>
-            <div className="col-md-5 my-3">
+            <div id="sub-btn-sec">
               <input
                 type="submit"
                 target="_blank"
                 value="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                className="btn btn-danger shadow-custom-danger w-100"
+                className="btn btn-danger shadow-custom-danger w-100 sub-btn"
               ></input>
             </div>
           </div>
